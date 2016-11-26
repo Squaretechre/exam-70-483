@@ -40,16 +40,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateTypes\Constructors\DefaultConstructor.cs" />
+    <Compile Include="CreateTypes\Constructors\ImplicitConstructor.cs" />
+    <Compile Include="CreateTypes\Methods\DefaultParamsPassByVal.cs" />
+    <Compile Include="CreateTypes\Methods\RefKeyword.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ClassHeirarchy\" />
-    <Folder Include="ConsumeTypes\" />
-    <Folder Include="CreateTypes\" />
-    <Folder Include="EnforceEncapsulation\" />
-    <Folder Include="ManipulateStrings\" />
-    <Folder Include="ObjectLifecycle\" />
-    <Folder Include="Reflection\" />
+    <Folder Include="ClassHeirarchy\IComparable\" />
+    <Folder Include="ClassHeirarchy\IDisposable\" />
+    <Folder Include="ClassHeirarchy\IEnumerable\" />
+    <Folder Include="ClassHeirarchy\ImplementInterfaces\" />
+    <Folder Include="ClassHeirarchy\InheritFromBaseClass\" />
+    <Folder Include="ClassHeirarchy\IUnknown\" />
+    <Folder Include="ConsumeTypes\BoxUnboxToConvert\" />
+    <Folder Include="ConsumeTypes\CastTypes\" />
+    <Folder Include="ConsumeTypes\ConvertTypes\" />
+    <Folder Include="ConsumeTypes\DynamicKeyword\" />
+    <Folder Include="ConsumeTypes\DynamicTypes\" />
+    <Folder Include="ConsumeTypes\InteropWithUnmanagedCode\" />
+    <Folder Include="CreateTypes\Classes\" />
+    <Folder Include="CreateTypes\ExtensionMethods\" />
+    <Folder Include="CreateTypes\GenericTypes\" />
+    <Folder Include="CreateTypes\IndexedProperties\" />
+    <Folder Include="CreateTypes\OptionalAndNamedParams\" />
+    <Folder Include="CreateTypes\OverloadedMethods\" />
+    <Folder Include="CreateTypes\OverridenMethods\" />
+    <Folder Include="CreateTypes\ReferenceTypes\" />
+    <Folder Include="CreateTypes\StaticVariables\" />
+    <Folder Include="CreateTypes\ValueTypes\Enums\" />
+    <Folder Include="CreateTypes\ValueTypes\Structs\" />
+    <Folder Include="EnforceEncapsulation\ExplicitInterfaceImplementation\" />
+    <Folder Include="EnforceEncapsulation\UsingAccessors\" />
+    <Folder Include="EnforceEncapsulation\UsingProperties\" />
+    <Folder Include="ManipulateStrings\EnumerateStringMethods\" />
+    <Folder Include="ManipulateStrings\FormatStrings\" />
+    <Folder Include="ManipulateStrings\SearchStrings\" />
+    <Folder Include="ManipulateStrings\StringBuilder\" />
+    <Folder Include="ManipulateStrings\StringReader\" />
+    <Folder Include="ManipulateStrings\StringWriter\" />
+    <Folder Include="ObjectLifecycle\GarbageCollection\" />
+    <Folder Include="ObjectLifecycle\ImplementIDisposable\" />
+    <Folder Include="ObjectLifecycle\InteractionWithFinalisation\" />
+    <Folder Include="ObjectLifecycle\ManageFinalisation\" />
+    <Folder Include="ObjectLifecycle\ManageIDisposable\" />
+    <Folder Include="ObjectLifecycle\UnmanagedResources\" />
+    <Folder Include="Reflection\Attributes\Apply\" />
+    <Folder Include="Reflection\Attributes\Create\" />
+    <Folder Include="Reflection\Attributes\Read\" />
+    <Folder Include="Reflection\CodeGenerationAtRuntime\CodeDom\" />
+    <Folder Include="Reflection\CodeGenerationAtRuntime\LambdaExpressions\" />
+    <Folder Include="Reflection\UseSystemReflection\Assembly\" />
+    <Folder Include="Reflection\UseSystemReflection\MethodInfo\" />
+    <Folder Include="Reflection\UseSystemReflection\PropertyInfo\" />
+    <Folder Include="Reflection\UseSystemReflection\Type\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
