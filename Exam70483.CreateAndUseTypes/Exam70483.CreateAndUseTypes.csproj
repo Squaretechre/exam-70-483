@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CreateTypes\Constructors\DefaultConstructor.cs" />
     <Compile Include="CreateTypes\Constructors\ImplicitConstructor.cs" />
+    <Compile Include="CreateTypes\Methods\AccessModifiers.cs" />
     <Compile Include="CreateTypes\Methods\DefaultParamsPassByVal.cs" />
     <Compile Include="CreateTypes\Methods\OutKeyword.cs" />
     <Compile Include="CreateTypes\Methods\RefKeyword.cs" />
