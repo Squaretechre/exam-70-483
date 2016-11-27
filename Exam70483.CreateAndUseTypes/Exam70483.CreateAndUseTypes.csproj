@@ -48,6 +48,7 @@
     <Compile Include="CreateTypes\ValueTypes\Enums\PayrollType.cs" />
     <Compile Include="CreateTypes\ValueTypes\Enums\UsingStringComparison.cs" />
     <Compile Include="CreateTypes\ValueTypes\Structs\Coordinate.cs" />
+    <Compile Include="CreateTypes\ValueTypes\Structs\Immutability.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
