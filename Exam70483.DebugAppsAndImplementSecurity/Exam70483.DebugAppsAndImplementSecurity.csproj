@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManageAssemblies\AboutAssemblies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -47,7 +48,6 @@
     <Folder Include="Encryption\Asymmetric\" />
     <Folder Include="Encryption\Symmetric\" />
     <Folder Include="ImplementDiagnostics\" />
-    <Folder Include="ManageAssemblies\" />
     <Folder Include="ValidateApplicationInput\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

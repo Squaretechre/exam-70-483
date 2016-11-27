@@ -45,6 +45,7 @@
     <Compile Include="CreateTypes\Methods\DefaultParamsPassByVal.cs" />
     <Compile Include="CreateTypes\Methods\OutKeyword.cs" />
     <Compile Include="CreateTypes\Methods\RefKeyword.cs" />
+    <Compile Include="CreateTypes\ReferenceTypes\Array.cs" />
     <Compile Include="CreateTypes\ValueTypes\Enums\PayrollType.cs" />
     <Compile Include="CreateTypes\ValueTypes\Enums\UsingStringComparison.cs" />
     <Compile Include="CreateTypes\ValueTypes\Structs\Coordinate.cs" />
@@ -71,7 +72,6 @@
     <Folder Include="CreateTypes\OptionalAndNamedParams\" />
     <Folder Include="CreateTypes\OverloadedMethods\" />
     <Folder Include="CreateTypes\OverridenMethods\" />
-    <Folder Include="CreateTypes\ReferenceTypes\" />
     <Folder Include="CreateTypes\StaticVariables\" />
     <Folder Include="EnforceEncapsulation\ExplicitInterfaceImplementation\" />
     <Folder Include="EnforceEncapsulation\UsingAccessors\" />

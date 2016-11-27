@@ -22,8 +22,9 @@ namespace Exam70483.CreateAndUseTypes.CreateTypes.ValueTypes.Structs
             // in many ways like a value type
             const string name = " bobby conn ";
             name.Trim();
-            
+
             // ^ name still contains whitespace
+            // the Trim method created a new string but that work is lost
         }
     }
 }
