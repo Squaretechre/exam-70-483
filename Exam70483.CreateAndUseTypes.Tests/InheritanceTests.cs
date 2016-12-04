@@ -1,7 +1,7 @@
-﻿using Exam70483.CreateAndUseTypes.CreateTypes.Classes;
+using Exam70483.CreateAndUseTypes.CreateTypes.Classes;
 using NUnit.Framework;
 
-namespace Exam70483.DelegatesAndEvents.Tests
+namespace Exam70483.CreateAndUseTypes.Tests
 {
     [TestFixture]
     public class InheritanceTests

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.DelegatesAndEvent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.DelegatesAndEvents.Tests", "Exam70483.DelegatesAndEvents.Tests\Exam70483.DelegatesAndEvents.Tests.csproj", "{FE455381-5084-435E-B080-3526112382D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.CreateAndUseTypes.Tests", "Exam70483.CreateAndUseTypes.Tests\Exam70483.CreateAndUseTypes.Tests.csproj", "{11EFBC2E-C15B-4A22-B476-5A32C9E42229}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{FE455381-5084-435E-B080-3526112382D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE455381-5084-435E-B080-3526112382D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE455381-5084-435E-B080-3526112382D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11EFBC2E-C15B-4A22-B476-5A32C9E42229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11EFBC2E-C15B-4A22-B476-5A32C9E42229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11EFBC2E-C15B-4A22-B476-5A32C9E42229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11EFBC2E-C15B-4A22-B476-5A32C9E42229}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
