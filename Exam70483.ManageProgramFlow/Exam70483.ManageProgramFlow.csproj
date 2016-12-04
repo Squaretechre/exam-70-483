@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProgramFlow\ForEachLoop.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -48,7 +49,6 @@
     <Folder Include="ExceptionHandling\" />
     <Folder Include="Multithreading\Implement\" />
     <Folder Include="Multithreading\Manage\" />
-    <Folder Include="ProgramFlow\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
