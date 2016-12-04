@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.ManageProgramFlow", "Exam70483.ManageProgramFlow\Exam70483.ManageProgramFlow.csproj", "{A3DEC45B-1A83-4567-833E-96816394F189}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.Supplemental", "Exam70483.Supplemental\Exam70483.Supplemental.csproj", "{65B49CB0-F31F-4ACD-8B5B-627E00678096}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.DelegatesAndEvents", "Exam70483.DelegatesAndEvents\Exam70483.DelegatesAndEvents.csproj", "{9593BEC9-3293-4EE5-95AB-4381F99B478F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.DelegatesAndEvents.Tests", "Exam70483.DelegatesAndEvents.Tests\Exam70483.DelegatesAndEvents.Tests.csproj", "{FE455381-5084-435E-B080-3526112382D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{9593BEC9-3293-4EE5-95AB-4381F99B478F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9593BEC9-3293-4EE5-95AB-4381F99B478F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9593BEC9-3293-4EE5-95AB-4381F99B478F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE455381-5084-435E-B080-3526112382D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE455381-5084-435E-B080-3526112382D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE455381-5084-435E-B080-3526112382D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE455381-5084-435E-B080-3526112382D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
