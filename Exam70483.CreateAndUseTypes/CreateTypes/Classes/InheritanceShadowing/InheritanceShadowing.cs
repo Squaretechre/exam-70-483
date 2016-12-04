@@ -1,6 +1,6 @@
-﻿namespace Exam70483.CreateAndUseTypes.CreateTypes.Classes
+﻿namespace Exam70483.CreateAndUseTypes.CreateTypes.Classes.InheritanceShadowing
 {
-    public class Inheritance
+    public class InheritanceShadowing
     {
         public void Example()
         {

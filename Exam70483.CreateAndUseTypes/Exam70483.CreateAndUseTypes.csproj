@@ -40,9 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateTypes\Classes\Father.cs" />
-    <Compile Include="CreateTypes\Classes\Inheritance.cs" />
-    <Compile Include="CreateTypes\Classes\Son.cs" />
+    <Compile Include="CreateTypes\Classes\InheritanceShadowing\Father.cs" />
+    <Compile Include="CreateTypes\Classes\InheritanceShadowing\InheritanceShadowing.cs" />
+    <Compile Include="CreateTypes\Classes\InheritanceShadowing\Son.cs" />
     <Compile Include="CreateTypes\Constructors\DefaultConstructor.cs" />
     <Compile Include="CreateTypes\Constructors\ImplicitConstructor.cs" />
     <Compile Include="CreateTypes\Methods\AccessModifiers.cs" />

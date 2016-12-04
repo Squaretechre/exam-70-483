@@ -1,10 +1,10 @@
-using Exam70483.CreateAndUseTypes.CreateTypes.Classes;
+using Exam70483.CreateAndUseTypes.CreateTypes.Classes.InheritanceShadowing;
 using NUnit.Framework;
 
 namespace Exam70483.CreateAndUseTypes.Tests
 {
     [TestFixture]
-    public class InheritanceTests
+    public class InheritanceShadowingTests
     {
         [Test]
         public void SubTypeShouldCallSuperTypeShadowedMethodWhenDowncast()
@@ -12,13 +12,13 @@ namespace Exam70483.CreateAndUseTypes.Tests
             Father person = new Son("The Father's son");
             var actual = person.PlaceInHierarchy();
             const string expected = "supertype";
-            Assert.That(actual, Is.EqualTo(expected)); 
+            Assert.That(actual, Is.EqualTo(expected));
         }
 
         [Test]
         public void SubTypeShouldInvokeOwnImplementationOfShadowedSupertypeMethod()
         {
-            Son person = new Son("The Father's son");
+            var person = new Son("The Father's son");
             var actual = person.PlaceInHierarchy();
             const string expected = "subtype";
             Assert.That(actual, Is.EqualTo(expected));
