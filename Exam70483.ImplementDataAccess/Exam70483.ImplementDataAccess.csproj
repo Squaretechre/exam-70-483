@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsingLINQ\LinqExamples.cs" />
+    <Compile Include="UsingLINQ\LinqLikeExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Collections\RetrieveData\" />
@@ -49,7 +51,6 @@
     <Folder Include="DataSerialization\Deserialize\" />
     <Folder Include="DataSerialization\Serialize\" />
     <Folder Include="IOOperations\" />
-    <Folder Include="UsingLINQ\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
