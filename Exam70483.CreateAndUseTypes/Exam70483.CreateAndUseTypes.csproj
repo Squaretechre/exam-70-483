@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassHeirarchy\IDisposable\DbContext.cs" />
+    <Compile Include="ClassHeirarchy\IEnumerable\SomeCollection.cs" />
+    <Compile Include="CreateTypes\Classes\AbstractClasses\AbstractClass.cs" />
     <Compile Include="CreateTypes\Classes\InheritanceShadowing\Father.cs" />
     <Compile Include="CreateTypes\Classes\InheritanceShadowing\InheritanceShadowing.cs" />
     <Compile Include="CreateTypes\Classes\InheritanceShadowing\Son.cs" />
@@ -61,8 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClassHeirarchy\IComparable\" />
-    <Folder Include="ClassHeirarchy\IDisposable\" />
-    <Folder Include="ClassHeirarchy\IEnumerable\" />
     <Folder Include="ClassHeirarchy\ImplementInterfaces\" />
     <Folder Include="ClassHeirarchy\InheritFromBaseClass\" />
     <Folder Include="ClassHeirarchy\IUnknown\" />

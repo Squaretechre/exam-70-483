@@ -4,12 +4,15 @@ namespace Exam70483.CreateAndUseTypes.CreateTypes.Classes.UsingVirtual
 {
     internal class UsingVirtual
     {
+        // properties can also be marked virtual
+        public virtual string Name { get; set; }
+
         public void CompileTimeVersusRuntime()
         {
-            // without any other information to go off, the C# compiler will use the 
-            // implementation of a method found in the the type any types are downcast to
-            // without virtual = determined at compile time.
-            Father person = new Son("the son");
+        // without any other information to go off, the C# compiler will use the 
+        // implementation of a method found in the the type any types are downcast to
+        // without virtual = determined at compile time.
+        Father person = new Son("the son");
             var placeInClassHierarchy = person.PlaceInHierarchy();
             
             // placeInClassHierarchy will be equal to "supertype" because the C# compiler
