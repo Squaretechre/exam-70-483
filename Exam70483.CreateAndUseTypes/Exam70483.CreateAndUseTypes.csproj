@@ -50,6 +50,8 @@
     <Compile Include="CreateTypes\Classes\UsingVirtual\Vehicle.cs" />
     <Compile Include="CreateTypes\Constructors\DefaultConstructor.cs" />
     <Compile Include="CreateTypes\Constructors\ImplicitConstructor.cs" />
+    <Compile Include="CreateTypes\ExtensionMethods\DateTimeExtensions.cs" />
+    <Compile Include="CreateTypes\ExtensionMethods\UsingExtensionMethods.cs" />
     <Compile Include="CreateTypes\Methods\AccessModifiers.cs" />
     <Compile Include="CreateTypes\Methods\DefaultParamsPassByVal.cs" />
     <Compile Include="CreateTypes\Methods\MethodSignatures.cs" />
@@ -73,7 +75,6 @@
     <Folder Include="ConsumeTypes\DynamicKeyword\" />
     <Folder Include="ConsumeTypes\DynamicTypes\" />
     <Folder Include="ConsumeTypes\InteropWithUnmanagedCode\" />
-    <Folder Include="CreateTypes\ExtensionMethods\" />
     <Folder Include="CreateTypes\GenericTypes\" />
     <Folder Include="CreateTypes\IndexedProperties\" />
     <Folder Include="CreateTypes\OptionalAndNamedParams\" />
