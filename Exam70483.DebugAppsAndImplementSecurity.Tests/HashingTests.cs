@@ -6,6 +6,9 @@ using NUnit.Framework;
 namespace Exam70483.DebugAppsAndImplementSecurity.Tests
 {
     [TestFixture]
+    // hash functions can be used to provide integrity and authentication
+    // they create a fixed length "digest" from variable length data, very fast to compute
+    // commonly used in pasword systems
     public class HashingTests
     {
         private const string PlainText = "hello, world";

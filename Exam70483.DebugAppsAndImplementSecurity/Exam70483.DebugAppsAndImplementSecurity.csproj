@@ -40,13 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Encryption\Symmetric\SymmetricAlgorithms.cs" />
     <Compile Include="ManageAssemblies\AboutAssemblies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DebugAnApp\" />
     <Folder Include="Encryption\Asymmetric\" />
-    <Folder Include="Encryption\Symmetric\" />
     <Folder Include="ImplementDiagnostics\" />
     <Folder Include="ValidateApplicationInput\" />
   </ItemGroup>
