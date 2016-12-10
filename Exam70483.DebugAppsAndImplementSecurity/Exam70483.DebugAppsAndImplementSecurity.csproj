@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Encryption\Symmetric\AES.cs" />
     <Compile Include="Encryption\Symmetric\SymmetricAlgorithms.cs" />
+    <Compile Include="Encryption\Symmetric\UsingCryptoStream.cs" />
     <Compile Include="ManageAssemblies\AboutAssemblies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
