@@ -1,0 +1,21 @@
+﻿// Create custom RSA keys:
+aspnet_regiis -pc "RjbRsaKeys" -exp
+
+// Grant account permissions to new key (otherwise ASP.NET web pages can't use keys)
+aspnet_regiis -pa "RjbRsaKeys" "NT Authority\Network Service"
+
+// Export the RSA custom keys (public and private)
+aspnet_regiis -px "RjbRsaKeys" "C:\RjbRsaKeysPublicPrivateKeys.xml" -pri
+
+// Export the RSA public key
+aspnet_regiis -px "RjbRsaKeys" "C:\RjbRsaKeysPublicKey.xml"
+
+
+// Delete the custom key (show that import works on same machine)
+aspnet_regiis -pz "RjbRsaKeys"
+
+// Import the custom key from XML file (public only)
+aspnet_regiis -pi "RjbRsaKeys" "C:\RjbRsaPublicKey.xml"
+
+// Import the custom keys from XML file (public and private)
+aspnet_regiis -pi "RjbRsaKeys" "C:\RjbRsaPublicPrivateKeys.xml" -exp

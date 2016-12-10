@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Encryption\Asymmetric\AsymmetricAlgorithms.cs" />
     <Compile Include="Encryption\Symmetric\AES.cs" />
     <Compile Include="Encryption\Symmetric\SymmetricAlgorithms.cs" />
     <Compile Include="Encryption\Symmetric\UsingCryptoStream.cs" />
@@ -48,9 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DebugAnApp\" />
-    <Folder Include="Encryption\Asymmetric\" />
     <Folder Include="ImplementDiagnostics\" />
     <Folder Include="ValidateApplicationInput\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Encryption\Asymmetric\RSA Create Script.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
