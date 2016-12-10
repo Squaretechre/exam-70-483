@@ -45,6 +45,13 @@ namespace Exam70483.DebugAppsAndImplementSecurity.Encryption.Symmetric
     //                   - This does not need to be secret, but should be different
     //                   - for every set of data. Never reuse an IV.
     //                   - Send both cipher text and IV to decrypt.
+    //
+    // Symmetric algorithms summary:
+    // - Provide confidentiality
+    // - Use a secret shared key for encryption and decryption
+    // - Are fast
+    // - Secure key storage is difficult, is storing in web.config an issue?
+    // - Key distribution is problematic
     public class SymmetricAlgorithms
     {
         private const string TwoFiveSixBitBase64Key = "lU63r8YTfiUyhEgpjZNqA6cOjww50Rb1/jA9pSTnKPw=";
