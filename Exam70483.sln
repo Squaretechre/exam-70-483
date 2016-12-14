@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.CreateAndUseTypes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.DebugAppsAndImplementSecurity.Tests", "Exam70483.DebugAppsAndImplementSecurity.Tests\Exam70483.DebugAppsAndImplementSecurity.Tests.csproj", "{F781236C-9524-4FCC-BD1E-FAA41E1A79D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.ManageProgramFlow.Console", "Exam70483.ManageProgramFlow.Console\Exam70483.ManageProgramFlow.Console.csproj", "{22A89AED-68C6-4E71-92B5-35F93E374A6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{F781236C-9524-4FCC-BD1E-FAA41E1A79D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F781236C-9524-4FCC-BD1E-FAA41E1A79D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F781236C-9524-4FCC-BD1E-FAA41E1A79D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A89AED-68C6-4E71-92B5-35F93E374A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A89AED-68C6-4E71-92B5-35F93E374A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A89AED-68C6-4E71-92B5-35F93E374A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A89AED-68C6-4E71-92B5-35F93E374A6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
