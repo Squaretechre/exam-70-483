@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataPartitioning.cs" />
+    <Compile Include="HoldAndWait.cs" />
     <Compile Include="Messenger.cs" />
     <Compile Include="MonitorExample.cs" />
     <Compile Include="MultipleThreads.cs" />
