@@ -6,7 +6,8 @@
         {
             //ThreadDemo.Run();
             //ThreadPoolDemo.Run();
-            MultipleThreads.Run();
+            //MultipleThreads.Run();
+            DataPartitioning.Run();
         }
     }
 }
