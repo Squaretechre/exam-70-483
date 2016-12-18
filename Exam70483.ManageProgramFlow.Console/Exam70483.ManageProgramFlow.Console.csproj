@@ -44,10 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataPartitioning.cs" />
+    <Compile Include="Deadlock.cs" />
     <Compile Include="HoldAndWait.cs" />
     <Compile Include="Messenger.cs" />
     <Compile Include="MonitorExample.cs" />
     <Compile Include="MultipleThreads.cs" />
+    <Compile Include="Mutexes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThreadPoolDemo.cs" />

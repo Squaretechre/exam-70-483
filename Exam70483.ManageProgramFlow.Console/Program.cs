@@ -4,9 +4,9 @@
     {
         private static void Main()
         {
-            //ThreadDemo.Run();
-            //ThreadPoolDemo.Run();
-            //MultipleThreads.Run();
+            //ThreadDemo.Credit();
+            //ThreadPoolDemo.Credit();
+            //MultipleThreads.Credit();
             DataPartitioning.Run();
         }
     }

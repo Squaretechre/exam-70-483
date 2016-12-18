@@ -18,7 +18,7 @@ namespace Exam70483.ManageProgramFlow.ConsoleApp
         {
             // The thread id output in SayHello will be different to that of the
             // main thread id which is used to start the "Hello, Thread".
-            Console.WriteLine("[{0}] Run called", Thread.CurrentThread.ManagedThreadId);
+            Console.WriteLine("[{0}] Credit called", Thread.CurrentThread.ManagedThreadId);
             Console.WriteLine("[{0}] Processor/core count = {1}",
                 Thread.CurrentThread.ManagedThreadId,
                 Environment.ProcessorCount);
@@ -91,7 +91,7 @@ namespace Exam70483.ManageProgramFlow.ConsoleApp
             var thread4 = new Thread(IWillBeManuallyShutDown);
             thread4.Start();
 
-            Console.WriteLine("[{0}] Run done", Thread.CurrentThread.ManagedThreadId);
+            Console.WriteLine("[{0}] Credit done", Thread.CurrentThread.ManagedThreadId);
             Console.ReadLine();
 
             ThreadsShouldLive = false;
