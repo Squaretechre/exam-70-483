@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ThreadingSummary.cs" />
     <Compile Include="DataPartitioning.cs" />
     <Compile Include="Deadlock.cs" />
     <Compile Include="HoldAndWait.cs" />
