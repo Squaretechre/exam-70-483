@@ -1,0 +1,244 @@
+X509 certificates
+Debug or trace
+#DEBUG syntax
+Assembly reflecton load from?
+string.format decimal formatting
+TraceSource?
+IAsyncResult task creation, TaskFactory
+
+Data partitioning, go back and do the pluralsight exercise
+
+
+LINQ to SQL
+Uses Where extension method on IQueryable, accepts Expression<Func<Type,bool>> predicate)
+and returns IQueryable
+
+IQuery derives from IEnumerable
+
+Difference between IQueryable and IEnumerable, takes Expression<T> rather than Func<T>.
+Querable no longer takes Funcs which compile down to delegates, instead they wrap the Func in an
+Expression. When the CSC sees an Expression, it no longer compiles it to IL but rather creates an
+AST that has objects inside that represent the operations expressed in code
+
+	mul
+       /   \
+      x     x 
+
+It is up to a LINQ provider to traverse the tree and figure out how to represent it, for instance
+in T-SQL.
+
+
+
+-------------
+Yield Keyword
+-------------
+
+" yield
+  produce or provide (a natural, agricultural, or industrial product)
+  produce or generate (a result, gain, or financial return) "
+
+yeild return - provides deferred execution.
+
+The yield keyword builds an IEnumerable. Nothing will be executed until some calling code attempts to iterate over the resulting 
+IEnumerable. When that does happen, whenever execution hits the yield keyword, control is "yielled" back to the caller,
+and the yieled object is passed back to the calling code to be acted upon. Execution then resumes from the point where the original
+yield statement handed over execution.
+
+Methods using the yield keyword can return either IEnumerable, IEnumerable<T>, IEnumerator or IEnumerable<T>, anything that can be used in a foreach loop.
+
+
+------------------
+Deferred Execution
+------------------
+
+Using the yeidl return keyword enables deferred execution. LINQ methods are generally implemented using yield return, not all. LINQ queries can
+be seen as just that, data structures that represent a query, not the result of executing that query. Execution is performed only when
+neccessary, LINQ queries are as lazy as possible. Anything that inspects the results of the query will force it to execute, such as:
+- serializing the results into json / xml
+- databinding the results
+- ToList - To[type], anything with "To" prefix will inspect the query and return a concrete result
+- Count
+
+Which LINQ methods use deferred execution?
+- Search for method name, should be an MSDN page for Enumerator.METHOD_NAME. Enumerator is the static class that LINQ methods live in.
+- Anything implemented using deferred execution will have "this method is implemented using deferred execution" in the "remarks" section. 
+
+Advantages:
+- Possible to pass queries around applications to be composed with additional information, knowing that all that is being built up is a
+  data structure that represents the query. 
+
+Disadvantages:
+- Can end up doing extra work accidentally iterating the query multiple times, can be especially bad for big result sets, e.g:
+	query = movies.Filter(m => m.Year > 2000)		// nothing executed yet
+	Console.WriteLine(query.Count())			// must inspect the result of the query
+	var enumerator = query.GetEnumerator()	
+	while(enumerator.MoveNext())				// calling MoveNext inspects the query and iterates again
+		Console.WriteLine(enumerator.Current.Title)
+
+- Best to assign the result of the query and then act upon the concrete result.
+
+----
+DLR
+----
+
+- Expando object, can addo properties and methods (actions)
+
+
+----
+CLR
+----
+
+CLR
+- Rotor
+- CLR is a set of dlls that runs per process
+	- side by side execution, applications can run different versions of the CLR in their process
+	- each process running managed code has it's own resources, thread pool, memory manager, GC
+
+Managed execution is characterized by...
+	- types - described by a managed language, C#
+		- classes
+		- structs
+		- enums
+		- interfaces
+		- delegates
+	- compiler produces an assembly
+		- contains intermediate language (IL) and metadata
+	- assembly resolver locates and loads assemblies
+	- IL is just-in-time (JIT) compiled as runtime as needed
+	- runtime services influence and/or facilitate execution
+		- garbage collection (GC), security (CAS), reflection
+
+ildasm / peheader
+ngen.exe - native code generator - supports "preJIT", can pass it the IL in an assembly and ask it to generate machine code, and
+stash it in a place the CLR knows about. native code generation cache. Tool you run at installation time, not dev time.
+
+debug extension - sos: son of strike
+MS devtools debugging
+
+CLR method table?
+Unreferenced objects are collected, long living objects are compacted for locality of reference
+
+CLR is a superset of the CLI
+
+----------------------
+Assemblys & Versioning
+----------------------
+
+Same namespace can split over multiple assemblies.
+
+Strongly Named Assemblies
+- signed assemblies are reffered to as "strongly named"
+- strongly named assemblies have a non-null PublicKeyToken
+
+Simple Assembly Resolution Process
+Simple assemly resolution algorithms are only used with unsiged assemblies.
+
+A simple set of rules govern loading of unsigned assemblies
+- hosting application directory (APPBASE) ... will serve as the root for where the CLR will look
+- subdirectory named after the assembly to load
+	- eg: CLR will look for acme.dll in APPBASE\acme
+
+- additional subdirectory(ies) named in the application's config file
+	- eg: hello.exe's config file is named hello.exe.config
+	- uses the assemblyBinding > probing privatePath="subdir1;subdir2" nodes
+
+- called private path probing
+	- often referred to as "xcopy deployment"
+
+
+
+Dependencies:
+Dependencies can be found in the manifest of an assembly
+
+Assembly Binding Log Viewer
+- fuslogw	
+- Log settings > log bind failures to disk (machine wide assembly resolution log), shows in Fusion Log Viewer, fuslogw
+
+.NET Framework 2.0 Configuration Utility
+- Can setup custom resolution paths on a per app basis, generates the .exe.config file
+- Applications > Add application > View app properties > Relative search path for additional assemblies
+	- will create the app.exe.config file described above
+- Can add binding policies, tell GAC to load 1.0.0.2 when looking for 1.0.0.1
+- Can add codebase hints which provide additional URIs for where specific versions of assemblies can be found
+	- After all of the GACs usual version mapping, if the assembly version can't be found, try the codebase hints
+	- If the codebase is hosted at a remote location, it will first be downloaded before being loaded
+
+Creating Strongly Named Assemblies
+SN.EXE creates/manages key files 	(SN = strong name)
+	- "-k" command line option creates a new pair of keys, public / private
+	- C:\sn -k acmekeys.snk		- acmekeys.snk contains public & private keys
+
+
+Assemly name is specified using attributes
+- or VS.NET project settings
+
+Can use the C# compiler to sign assemblies:
+C:> csc /keyfile: acmekeys.snk /t: library acme.cs
+
+acme.cs  --->
+	     |--- csc.exe ---> calc.dll
+acme.snk --->
+
+Signing in Visual Studio
+Can goto properties > signing > browser or generate
+
+
+Signed Assemblies & References
+Strongly named assemblies contain a signature
+- assembly hash encrypted with publisher's private key
+- copy of a public key embedded in manifest for clients
+	- referencing assemblies note the key [token] (a hash of the public key) for future use
+
+	__________________  acme.dll
+       |   ____________   | 
+       |  | public key |  |
+       |   ------------   |
+       |   ____________   |
+       |  |  signature |  |
+       |   ------------   |
+       |------------------|
+       |       code       |
+        ------------------
+
+
+
+Strongly Named Assembly Resolution Process
+Loading of signed assemblies is more involved
+- request version optionally mapped to alternate version
+- is the target version already in memory?
+- is the target version installed in the Global Assembly Cache (GAC)
+	- local file system repository in the support of side-by-side (SxS) versioning
+	- allow to have multiple versions of the same assembly from the same vendor installed side by side
+- has a CODEBASE hint been provided
+	- an arbirtary URI (file system, network share, HTTP)
+- fallback on private path probing
+- strong name validation
+	- CLR checks integrity of assembly found
+	- performance optimisation: does not perform for each resolution, performed once then stored in GAC
+
+
+GAC Util
+- Can install assemblies into the GAC using the command line tool "gacutil": 	gacutil -i acme.dll
+- The GAC only validates the integrity of an assembly when it is being "added" to the cache
+	- If an assembly is tampered with, i.e. it would generate a new public token, the GAC will still load it if already installed.
+
+
+Native Code Cache
+Assemblies can be "preJITed" on machines where deployed
+- IL-based assembly deployed on target machine normally
+- ngen.exe utility run to compile IL to processor-specific code
+	- ngen == 'native code generator' or 'native image generator'
+	- run on target machine, not dev machine
+	- image generated is named assembly.ni.extension (acme.ni.dll)
+- the ngen cache is consulted when an assembly is resolved
+	- does a native image exist for the target assembly to be loaded?
+	- does it's MVID (module version ID) match?
+		- the MVID is a GUID in each assembly's metadata
+		- generated a new when assembly image is emmited by a compiler
+		- recorded for future reference when native image is generated
+
+Native Code Cache (NGEN) Cache
+- Can use the ngen util to install the PreJIT (jitted) version of an assembly to save the JIT overhead at runtime
+	- ngen install acme.dll
+- The CLR will load both the native image (NI) and IL versions of the assembly at runtime
+	- the NI version contains method bodies of native instructions, all the metadata however is in the IL assembly
