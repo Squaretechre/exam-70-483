@@ -1,10 +1,23 @@
 X509 certificates
-Debug or trace
+Debug or trace / Debug.Assert
 #DEBUG syntax
 Assembly reflecton load from?
 string.format decimal formatting
 TraceSource?
 IAsyncResult task creation, TaskFactory
+Structured exception handling?
+Collections - Concurrent collections
+Collections - SortedList
+Rethrow original exception with just throw (includes entire exception stack)
+Com interop - OleDbConnection
+Assembly attributes vs gacutil
+Unique assembly names
+Regex
+Task Parallel Library
+Tasks must also have async keyword if being used asynchronously
+WeakReference type in relation to the GC
+Event without subscribers will thrown an exception, duplicate calls ignored
+Xml serialization
 
 Data partitioning, go back and do the pluralsight exercise
 
