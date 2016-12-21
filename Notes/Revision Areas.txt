@@ -51,9 +51,10 @@ Methods using the yield keyword can return either IEnumerable, IEnumerable<T>, I
 Deferred Execution
 ------------------
 
-Using the yeidl return keyword enables deferred execution. LINQ methods are generally implemented using yield return, not all. LINQ queries can
-be seen as just that, data structures that represent a query, not the result of executing that query. Execution is performed only when
-neccessary, LINQ queries are as lazy as possible. Anything that inspects the results of the query will force it to execute, such as:
+Using the yeidl return keyword enables deferred execution. LINQ methods that return an abstract type are generally implemented using 
+yield return, not all. LINQ queries can be seen as just that, data structures that represent a query, not the result of executing that 
+query. Execution is performed only when neccessary, LINQ queries are as lazy as possible. Anything that inspects the results of the query 
+will force it to execute, such as:
 - serializing the results into json / xml
 - databinding the results
 - ToList - To[type], anything with "To" prefix will inspect the query and return a concrete result
