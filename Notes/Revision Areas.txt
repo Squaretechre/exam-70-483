@@ -8,7 +8,7 @@ IAsyncResult task creation, TaskFactory
 Structured exception handling?
 Collections - Concurrent collections
 Collections - SortedList
-Rethrow original exception with just throw (includes entire exception stack)
+Rethrow original exception with just throw (includes entire exception stack) / rethrow vs throw
 Com interop - OleDbConnection
 Assembly attributes vs gacutil
 Unique assembly names
@@ -18,6 +18,14 @@ Tasks must also have async keyword if being used asynchronously
 WeakReference type in relation to the GC
 Event without subscribers will thrown an exception, duplicate calls ignored
 Xml serialization
+64bit app, system out of memory exception, 2gb arrays, what to do
+
+Custom exception constructor is inheriting from the base Exception class.
+Unmanaged code garbage collection.
+Measure how much memory app uses when stars.
+Compiler /define keyword .
+Remove items from List, what happens to the index.
+Lambda expression new keyword syntax. Groups method in the foreach loop.
 
 Data partitioning, go back and do the pluralsight exercise
 
