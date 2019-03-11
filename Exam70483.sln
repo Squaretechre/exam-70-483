@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.ManageProgramFlow", "Exam70483.ManageProgramFlow\Exam70483.ManageProgramFlow.csproj", "{A3DEC45B-1A83-4567-833E-96816394F189}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.ManageProgramFlow", "Old\Exam70483.ManageProgramFlow\Exam70483.ManageProgramFlow.csproj", "{A3DEC45B-1A83-4567-833E-96816394F189}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.CreateAndUseTypes", "Exam70483.CreateAndUseTypes\Exam70483.CreateAndUseTypes.csproj", "{CFA2434E-BEFD-4837-8054-338DA1E390B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.CreateAndUseTypes", "Old\Exam70483.CreateAndUseTypes\Exam70483.CreateAndUseTypes.csproj", "{CFA2434E-BEFD-4837-8054-338DA1E390B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.DebugAppsAndImplementSecurity", "Exam70483.DebugAppsAndImplementSecurity\Exam70483.DebugAppsAndImplementSecurity.csproj", "{3EAE0DD2-90C1-416C-B73A-407901D2608E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.DebugAppsAndImplementSecurity", "Old\Exam70483.DebugAppsAndImplementSecurity\Exam70483.DebugAppsAndImplementSecurity.csproj", "{3EAE0DD2-90C1-416C-B73A-407901D2608E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.ImplementDataAccess", "Exam70483.ImplementDataAccess\Exam70483.ImplementDataAccess.csproj", "{64E9D4DD-A0A3-425B-BEB5-84D041A9FE04}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.ImplementDataAccess", "Old\Exam70483.ImplementDataAccess\Exam70483.ImplementDataAccess.csproj", "{64E9D4DD-A0A3-425B-BEB5-84D041A9FE04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.Supplemental", "Exam70483.Supplemental\Exam70483.Supplemental.csproj", "{65B49CB0-F31F-4ACD-8B5B-627E00678096}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.Supplemental", "Old\Exam70483.Supplemental\Exam70483.Supplemental.csproj", "{65B49CB0-F31F-4ACD-8B5B-627E00678096}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.DelegatesAndEvents", "Exam70483.DelegatesAndEvents\Exam70483.DelegatesAndEvents.csproj", "{9593BEC9-3293-4EE5-95AB-4381F99B478F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.DelegatesAndEvents", "Old\Exam70483.DelegatesAndEvents\Exam70483.DelegatesAndEvents.csproj", "{9593BEC9-3293-4EE5-95AB-4381F99B478F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.CreateAndUseTypes.Tests", "Exam70483.CreateAndUseTypes.Tests\Exam70483.CreateAndUseTypes.Tests.csproj", "{11EFBC2E-C15B-4A22-B476-5A32C9E42229}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.CreateAndUseTypes.Tests", "Old\Exam70483.CreateAndUseTypes.Tests\Exam70483.CreateAndUseTypes.Tests.csproj", "{11EFBC2E-C15B-4A22-B476-5A32C9E42229}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.DebugAppsAndImplementSecurity.Tests", "Exam70483.DebugAppsAndImplementSecurity.Tests\Exam70483.DebugAppsAndImplementSecurity.Tests.csproj", "{F781236C-9524-4FCC-BD1E-FAA41E1A79D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.DebugAppsAndImplementSecurity.Tests", "Old\Exam70483.DebugAppsAndImplementSecurity.Tests\Exam70483.DebugAppsAndImplementSecurity.Tests.csproj", "{F781236C-9524-4FCC-BD1E-FAA41E1A79D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.ManageProgramFlow.Console", "Exam70483.ManageProgramFlow.Console\Exam70483.ManageProgramFlow.Console.csproj", "{22A89AED-68C6-4E71-92B5-35F93E374A6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam70483.ManageProgramFlow.Console", "Old\Exam70483.ManageProgramFlow.Console\Exam70483.ManageProgramFlow.Console.csproj", "{22A89AED-68C6-4E71-92B5-35F93E374A6B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1916CAE4-2995-4EB9-A638-85F96D5F8D3D}"
 EndProject
@@ -135,6 +135,7 @@ Global
 		{11EFBC2E-C15B-4A22-B476-5A32C9E42229} = {1916CAE4-2995-4EB9-A638-85F96D5F8D3D}
 		{F781236C-9524-4FCC-BD1E-FAA41E1A79D0} = {1916CAE4-2995-4EB9-A638-85F96D5F8D3D}
 		{22A89AED-68C6-4E71-92B5-35F93E374A6B} = {516B6A65-C685-4A09-B19C-4B9EABABD627}
+		{1916CAE4-2995-4EB9-A638-85F96D5F8D3D} = {516B6A65-C685-4A09-B19C-4B9EABABD627}
 		{391ED769-3ED9-4AB9-8EB8-BDBF4660B77C} = {58401E9A-ACFE-41B8-BFA7-4D55F9F9E2BB}
 		{926A119C-221D-4475-8B1A-2BD87FE1F8D1} = {C3AEA296-57E7-49D6-A331-71BD9895BF51}
 		{C3AEA296-57E7-49D6-A331-71BD9895BF51} = {C7BE57D9-FA20-4869-9F39-7CCBB2E75EA1}
