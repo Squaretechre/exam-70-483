@@ -37,7 +37,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "MicrosoftJumpSt
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ManageProgramFlow", "ManageProgramFlow", "{58401E9A-ACFE-41B8-BFA7-4D55F9F9E2BB}"
 	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
+		ManageProgramFlow\README.md = ManageProgramFlow\README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageMultithreading", "ManageProgramFlow\ManageMultithreading\ManageMultithreading.csproj", "{F652923C-20F1-4206-ADB3-0A3BBB0FCC95}"
@@ -52,7 +52,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicrosoftJumpStart", "Micro
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreateAndUseTypes", "CreateAndUseTypes", "{6DB9C9BB-8F0E-420E-B4E9-7ED174CA08E9}"
 	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
+		CreateAndUseTypes\README.md = CreateAndUseTypes\README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateTypes", "CreateAndUseTypes\CreateTypes\CreateTypes.csproj", "{2B228970-AE66-4016-AA0C-B9613229BDB3}"
@@ -71,7 +71,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipulateStrings", "Create
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DebugApplicationsAndImplementSecurity", "DebugApplicationsAndImplementSecurity", "{C914A4E5-0671-4496-9336-C8692EFE3FB7}"
 	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
+		DebugApplicationsAndImplementSecurity\README.md = DebugApplicationsAndImplementSecurity\README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidateApplicationInput", "DebugApplicationsAndImplementSecurity\ValidateApplicationInput\ValidateApplicationInput.csproj", "{DC743765-9359-47A7-A3BC-44F8514CA82C}"
@@ -86,7 +86,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementDiagnostics", "Deb
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImplementDataAccess", "ImplementDataAccess", "{4C17A476-560F-44E8-844B-B336BADC3116}"
 	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
+		ImplementDataAccess\README.md = ImplementDataAccess\README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformInputOutputOperations", "ImplementDataAccess\PerformInputOutputOperations\PerformInputOutputOperations.csproj", "{619EB9B2-9EEA-4472-B4DC-96C431A9BAC4}"
