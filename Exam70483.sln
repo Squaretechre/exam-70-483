@@ -38,9 +38,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{AB6AD86D-7EA3-4F87-A844-33E342251105}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ManageProgramFlow", "ManageProgramFlow", "{58401E9A-ACFE-41B8-BFA7-4D55F9F9E2BB}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageMultithreading", "ManageMultithreading\ManageMultithreading.csproj", "{F652923C-20F1-4206-ADB3-0A3BBB0FCC95}"
 EndProject
