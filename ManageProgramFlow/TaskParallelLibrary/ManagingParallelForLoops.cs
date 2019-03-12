@@ -11,8 +11,7 @@ namespace ManageProgramFlow
      * ParallelLoopState can be used to determine whether or not the loop successfully completed.
      * Stop() doesn't instantly stop all executing iterations.
      * Stop() also doesn't mean that any number > 200 will never run, there is no guarantee that items > 200 will run before items with higher numbers.
-     * Calling Stop() on the 200th iteration means that
-     * indexes lower than 200 might not be performed.
+     * Calling Stop() on the 200th iteration means that indexes lower than 200 might not be performed.
      * Calling Break() 
      */
     internal class ManagingParallelForLoops

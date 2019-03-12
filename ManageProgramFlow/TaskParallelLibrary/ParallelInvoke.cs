@@ -15,6 +15,17 @@ namespace ManageProgramFlow
         public static void Run()
         {
             Parallel.Invoke(Task1, Task2);
+            Parallel.Invoke(() =>
+            {
+                Console.WriteLine("Task 1 in lambda starting");
+                Thread.Sleep(1000);
+                Console.WriteLine("Task 1 in lambda ending");
+            }, () =>
+            {
+                Console.WriteLine("Task 2 in lambda starting");
+                Thread.Sleep(1000);
+                Console.WriteLine("Task 2 in lambda ending");
+            });
             Console.WriteLine("Finished processing. Press any key to end.");
             Console.ReadKey();
         }

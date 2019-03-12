@@ -7,7 +7,8 @@
             //ParallelInvoke.Run();
             //ParallelForEach.Run();
             //ParallelFor.Run();
-            ManagingParallelForLoops.Run();
+            //ManagingParallelForLoops.Run();
+            ParallelLinq.Run();
         }
     }
 }

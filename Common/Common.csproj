@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{391ED769-3ED9-4AB9-8EB8-BDBF4660B77C}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ManageProgramFlow</RootNamespace>
-    <AssemblyName>ManageProgramFlow</AssemblyName>
+    <ProjectGuid>{7FEA7F5F-ECD7-47BB-BC26-F462B91DD0C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,22 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ManagingParallelForLoops.cs" />
-    <Compile Include="ParallelFor.cs" />
-    <Compile Include="ParallelForEach.cs" />
-    <Compile Include="ParallelInvoke.cs" />
-    <Compile Include="ParallelLinq.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Run.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Common\Common.csproj">
-      <Project>{7fea7f5f-ecd7-47bb-bc26-f462b91dd0c6}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
