@@ -1,6 +1,7 @@
-﻿# Generics #
+﻿# Programming in C# Jump Start #
 
-- You can create your own custom generic classes
+## Generics ##
+
 - When creating a generic class, consider:
   - Which types to generalise
   - What constraints to apply

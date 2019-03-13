@@ -58,7 +58,36 @@ Iterate across collection and array items; program decisions by using switch sta
 
 ## Create and implement events and callbacks ##
 
-Create event handlers; subscribe to and unsubscribe from events; use built-in delegate types to create events; create delegates; lambda expressions; anonymous methods
+- Create event handlers
+- Subscribe to and unsubscribe from events
+- Use built-in delegate types to create events
+- Create delegates
+- Lambda expressions
+- Anonymous methods
+
+- Delegates based on `MulticastDelegate`
+
+- Event handler is responsible for receiving and processing data from a delegate
+- Normally receives two parameters, `Sender` and `EventArgs`
+- `EventArgs` is responsible for encapsulating the event data
+
+- Events provide notifications and send data using `EventArgs`
+- Delegates act as the glue/pipeline between events and event handler
+- Event handlers receive and process `EventArgs` data
+- Custom delegates defined using the `delegate` keyword, when compiled this inherits from `MulticastDelegate`
+  - `public delegate void WorkPerformed(int hours, WorkType workType)`
+- When the compiler sees the `delegate` keyword it creates a class behind the scenes that inherits from `MulicastDelegate`
+- Delegate knows how to pass data to the handler, delegating actual work to the handler method
+- Handlers must accept the same parameter types as the delegate, names don't need to match 
+  - `public void Manager_WorkPerformed(int workHours, WorkType type)`
+- .NET has a number of delegate base classes, i.e. `Delegate`, `MulticastDelegate`
+- `Delegate` has two properties `Method` and `Target`, `Method` is the function to invoke and `Target` is a reference to the object the function lives on
+- `Delegate` has a method `GetInvocationList()`
+- Custom delegates inherit from `MulticastDelegate`, this happens via the `delegate` keyword and you can't inherit from these directly, this happens when compiled
+- What is a `MulticastDelegate`:
+  - Can reference more than one delegate function
+  - Tracks delegate references using an invocation list
+  - Delegates in the list are invoked sequentially
 
 ## Implement exception handling ##
 
